@@ -594,6 +594,8 @@ endif
 # Force gcc to behave correct even for buggy distributions
 ifndef CONFIG_CC_STACKPROTECTOR
 KBUILD_CFLAGS += $(call cc-option, -fno-stack-protector)
+KBUILD_CFLAGS   += $(call cc-option, -fno-var-tracking-assignments)
+
 endif
 
 # This warning generated too much noise in a regular build.
