@@ -2137,8 +2137,7 @@ static int omap_hsmmc_resume(struct device *dev)
 		omap_hsmmc_conf_bus_power(host);
 
 	if (host->pdata->resume) {
-		ret = host->pdata->resume(dev, host->slot_id);
-		if (ret)
+		if (host->pdata->resume(dev, host->slot_id))
 			dev_dbg(dev, "Unmask interrupt failed\n");
 	}
 
