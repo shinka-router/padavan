@@ -33,6 +33,7 @@ struct fib_config {
 	int			fc_oif;
 	u32			fc_flags;
 	u32			fc_priority;
+	u32		    fc_type;	/* only 8 bits are used */
 	__be32			fc_prefsrc;
 	struct nlattr		*fc_mx;
 	struct rtnexthop	*fc_mp;
