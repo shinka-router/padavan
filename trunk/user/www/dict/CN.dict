@@ -462,7 +462,7 @@ InetCheckLostItem0=无动作
 InetCheckLostItem1=重启路由器
 InetCheckLostItem2=重连WAN
 InetCheckLostItem3=切换有线网络 <=> USB网卡
-Tweaks_desc=自定义按钮功能和 LED 设置。
+Tweaks_desc=自定义 WPS 按钮功能和 LED 设置。如无 WPS 按钮，请忽略。
 TweaksWPSAction=WPS 按钮功能设置
 TweaksFN1Action=FN1 按钮功能设置
 TweaksFN2Action=FN2 按钮功能设置
