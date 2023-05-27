@@ -9,7 +9,8 @@ if [ "$PS1" ] ; then
     export TERM=xterm
     export clashdir=/etc/storage/clash
     [ -r /etc_ro/banner ] && cat /etc_ro/banner
-    echo "Version: $(nvram get firmver_sub)"; echo ""
+    echo "firmware.ver: $(nvram get firmver_sub)"; echo ""
+    echo "kernel.ver: $(cat /proc/version)";
 
 fi;
 
