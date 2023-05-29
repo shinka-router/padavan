@@ -26,7 +26,7 @@ jobs:
           - build_variant: "mt7621-usb-1"
             targets: "RM2100 MI-R3G"
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Prepare environment
         run: |
           sudo apt update
@@ -54,7 +54,7 @@ jobs:
           echo "image_name=${image_name}" >> $GITHUB_ENV
       - name: Upload images to Artifact
         if: ${{ github.event_name != 'release' && success() }}
-        uses: actions/upload-artifact@v2.2.1
+        uses: actions/upload-artifact@v3
         with:
           name: ${{ env.image_name }}
           path: ${{ env.images_dir }}/*.7
